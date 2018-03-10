@@ -1,4 +1,7 @@
 def fizzbuzz(x)
+  if ((x % 5) && (x % 3)) == 0
+    return "FizzBuzz"
+  end
   if x % 3 == 0
     return "Fizz"
   end
