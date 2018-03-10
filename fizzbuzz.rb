@@ -1,10 +1,11 @@
 def fizzbuzz(x)
-  temp = ""
   if x % 3 == 0
-    temp = temp + "Fizz"
+    return "Fizz"
   end
   if x % 5 == 0
-    temp = temp + "Buzz"
+    return "Buzz"
   end
-  return temp
+  if ((x % 5) && (x % 3)) == 0
+    return nil
+  end
 end
